@@ -13,6 +13,9 @@
         var $ctrl = this;
 
         $ctrl.test = {
+            title: 'Billy Kidd 8187',
+            author: 'ebs238',
+            published: '2018-01-16'
         //     <entry>
         //     <title>Billy Kidd 8187</title>
         //     <link rel="alternate" type="text/html" href="https://www.flickr.com/photos/ebs238/24858067617/"/>
@@ -40,8 +43,6 @@
         };
 
         $ctrl.$onInit = function() {
-            debugger;
-            $ctrl.test =  'Hello World';
         };
     }
 }(angular));

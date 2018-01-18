@@ -1,18 +1,39 @@
-<!DOCTYPE Html>
-<html>
-    <head>
-        <title>Flickr</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <h1>Flickr Photo Stream</h1>
+<div class="site-container">
+    <h1>Flickr Photo Stream</h1>
 
-        <img src="https://placebear.com/200/300">
-        <figcaption><a href="">Photo title</a> by <a href="">author</a> </figcaption>
-        
-        <p class="description">Description: </p>
+    <div class="container">
+        <div class="box">
+            <img src="https://placebear.com/200/300" class="image">
+            <figcaption class="description"><a href="https://www.flickr.com/photos/ebs238/24858067617/">{{$ctrl.test.title}} </a> by <a href="https://www.flickr.com/people/ebs238/">{{$ctrl.test.author}}</a> </figcaption>
 
-        <p>Tags: </p>
+            <p class="description">Description: </p>
 
-    </body>
-</html>
+            <p class="description">Tags: </p>
+        </div>
+        <div class="box">
+            <img src="https://placebear.com/200/300" class="image">
+            <figcaption class="description">
+                <a href="">Photo title</a>  by <a href="">author</a> </figcaption>
+
+            <p class="description">Description: {{}} </p>
+
+            <p class="description">Tags: </p>
+        </div>
+        <div class="box">
+            <img src="https://placebear.com/200/300" class="image">
+            <figcaption class="description"><a href="">Photo title</a> by <a href="">author</a> </figcaption>
+
+            <p class="description">Description: </p>
+
+            <p class="description">Tags: </p>
+        </div>
+        <div class="box">
+            <img src="https://placebear.com/200/300" class="image">
+            <figcaption class="description"><a href="">Photo title</a> by <a href="">author</a> </figcaption>
+
+            <p class="description">Description: </p>
+
+            <p class="description">Tags: </p> 
+        </div>
+    </div>
+</div>
