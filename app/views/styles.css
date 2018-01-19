@@ -6,38 +6,50 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .site-container {
     margin: 0 auto;
     width: 1024px;
 }
 
 h1 {
-    font-family:Arial, Helvetica, sans-serif;
     color: darkblue;
     font-size: 28px;
 }
 
+.imgTitle {
+    font-size:16px;
+    text-align: center;
+}
+
+
 .description {
-    font-size:14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-align: left;
 }
 
 .container {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    
+    flex-direction: row;
+    align-items: bottom;
+    flex-wrap: wrap;
 }
 
 .box {
+    width: 20%;
+    margin: 1em;
     text-align: center;
-    padding: 0em;
-    border:2px solid black;
-    flex-basis: 20%;    
     flex-wrap: wrap;
+    padding: 0em;
+    border:2px solid rgb(17, 151, 212); 
 }
 
 .image {
     padding: 20px;
+    width: 190px;
 }

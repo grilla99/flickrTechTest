@@ -1,39 +1,10 @@
 <div class="site-container">
     <h1>Flickr Photo Stream</h1>
-
     <div class="container">
-        <div class="box">
-            <img src="https://placebear.com/200/300" class="image">
-            <figcaption class="description"><a href="https://www.flickr.com/photos/ebs238/24858067617/">{{$ctrl.test.title}} </a> by <a href="https://www.flickr.com/people/ebs238/">{{$ctrl.test.author}}</a> </figcaption>
-
-            <p class="description">Description: </p>
-
-            <p class="description">Tags: </p>
-        </div>
-        <div class="box">
-            <img src="https://placebear.com/200/300" class="image">
-            <figcaption class="description">
-                <a href="">Photo title</a>  by <a href="">author</a> </figcaption>
-
-            <p class="description">Description: {{}} </p>
-
-            <p class="description">Tags: </p>
-        </div>
-        <div class="box">
-            <img src="https://placebear.com/200/300" class="image">
-            <figcaption class="description"><a href="">Photo title</a> by <a href="">author</a> </figcaption>
-
-            <p class="description">Description: </p>
-
-            <p class="description">Tags: </p>
-        </div>
-        <div class="box">
-            <img src="https://placebear.com/200/300" class="image">
-            <figcaption class="description"><a href="">Photo title</a> by <a href="">author</a> </figcaption>
-
-            <p class="description">Description: </p>
-
-            <p class="description">Tags: </p> 
+        <div class="box" ng-repeat="item in $ctrl.feeds">
+            <img src="{{item.media.m}}" class="image">
+            <figcaption class="imgTitle"><a ng-href="{{item.link}}">{{item.title}}</a> by <a ng-href="{{}}">{{item.author}}</a></figcaption>
+            <p ng-show="item.tags" class="description">Tags: {{item.tags}} </p>
         </div>
     </div>
 </div>
