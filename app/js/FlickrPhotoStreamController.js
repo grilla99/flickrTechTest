@@ -3,7 +3,7 @@
     'use strict';
 
     angular.module('app')
-        .component('helloWorld', {
+        .component('flickrResponse', {
             templateUrl: 'app/views/testView.html',
             controller: FlickrController
         }
